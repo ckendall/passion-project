@@ -1,6 +1,9 @@
 require_relative '../models/spaceship'
 
 get "/" do
-  @coordinates = coords
   erb :"index"
+end
+
+get "/spaceships" do
+  coords.to_json
 end

@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    loads bootstrap
-  -->
+
+    <!-- loads bootstrap -->
+
   <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <!--
-    application.css is where you put your styles
-  -->
+
+    <!-- application.css is where you put your styles -->
+
   <link rel="stylesheet" href="/css/application.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/application.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=my key here&callback=getCoordinates"
+  async defer></script>
 
   <title></title>
 </head>
@@ -20,3 +23,4 @@
   <%= yield %>
 </body>
 </html>
+
